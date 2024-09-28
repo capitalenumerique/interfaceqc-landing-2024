@@ -1,9 +1,9 @@
 {
-  "name": "webaquebec",
+  "name": "interfaceqc",
   "version": "1.0.0",
   "private": true,
-  "description": "Web à Québec",
-  "author": "webaquebec",
+  "description": "Interface Québec",
+  "author": "capitalenumerique",
   "keywords": [
     "gatsby"
   ],
