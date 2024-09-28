@@ -11,7 +11,7 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 // schemas
-import eventSchema from './schemas';
+// import eventSchema from './schemas';
 
 const SEO = ({ description, lang, meta, title, image, langLinks }) => {
   const { site } = useStaticQuery(
@@ -78,11 +78,11 @@ const SEO = ({ description, lang, meta, title, image, langLinks }) => {
         />
       ))}
 
-      {eventSchema && (
+      {/* {eventSchema && (
         <script type='application/ld+json'>
           {JSON.stringify(eventSchema)}
         </script>
-      )}
+      )} */}
     </Helmet>
   );
 };

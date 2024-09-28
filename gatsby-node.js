@@ -8,7 +8,7 @@
  *
  * See https://www.gatsbyjs.com/docs/node-apis/#createPages for more info.
  */
-exports.createPages = require('./gatsby/createPages');
+// exports.createPages = require('./gatsby/createPages');
 
 /**
  * exports.onPostBuild is called after all other parts of the build process are complete
@@ -28,15 +28,15 @@ exports.createPages = require('./gatsby/createPages');
  * https://github.com/wp-graphql/wp-graphql/issues/1460#issuecomment-742235504
  *
  */
-exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions;
-  const typeDefs = `
-    type WpBlockAttributesObject {
-      foobar: String
-    }
-  `;
-  createTypes(typeDefs);
-};
+// exports.createSchemaCustomization = ({ actions }) => {
+//   const { createTypes } = actions;
+//   const typeDefs = `
+//     type WpBlockAttributesObject {
+//       foobar: String
+//     }
+//   `;
+//   createTypes(typeDefs);
+// };
 
 /**
  * Fix for making mapbox-gl works with gatsby in production

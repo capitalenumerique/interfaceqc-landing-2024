@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 // contexts
 import { GlobalProvider } from './src/contexts/GlobalContext';
 import { ModalProvider } from './src/contexts/ModalContext';
-import { ProgramFiltersProvider } from './src/contexts/ProgramFiltersContext';
+// import { ProgramFiltersProvider } from './src/contexts/ProgramFiltersContext';
 
 // components
 import Layout from './src/components/Layout/Layout';
@@ -28,7 +28,8 @@ export const wrapRootElement = ({ element }) => (
   <GlobalProvider>
     <LanguageProvider>
       <ModalProvider>
-        <ProgramFiltersProvider>{element}</ProgramFiltersProvider>
+        {/* <ProgramFiltersProvider>{element}</ProgramFiltersProvider> */}
+        {element}
       </ModalProvider>
     </LanguageProvider>
   </GlobalProvider>

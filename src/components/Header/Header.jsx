@@ -23,20 +23,20 @@ const Header = ({ pathname }) => {
   const { t, i18n } = useTranslation();
 
   const primaryNavigation = [
-    {
-      id: 'Programmation',
-      label: t('menu.program'),
-      slug: '/programmation/2024',
-      type: 'internal',
-      color: 'pineapple',
-    },
-    {
-      id: 'blog',
-      label: t('menu.blog'),
-      slug: '/blogue',
-      type: 'internal',
-      color: 'watermelon',
-    },
+    // {
+    //   id: 'Programmation',
+    //   label: t('menu.program'),
+    //   slug: '/programmation/2024',
+    //   type: 'internal',
+    //   color: 'pineapple',
+    // },
+    // {
+    //   id: 'blog',
+    //   label: t('menu.blog'),
+    //   slug: '/blogue',
+    //   type: 'internal',
+    //   color: 'watermelon',
+    // },
     {
       id: 'tickets',
       label: t('menu.ticketing'),

@@ -6,11 +6,10 @@ const inProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   siteMetadata: {
-    title: 'Web à Québec',
-    description:
-      'Le plus grand événement numérique francophone en Amérique du Nord.',
-    siteUrl: 'https://webaquebec.org',
-    image: '/og-img-waq-24.jpg',
+    title: 'Interface Québec',
+    description: '',
+    siteUrl: 'https://interfaceqc.org',
+    image: '',
   },
   plugins: [
     {
@@ -98,64 +97,64 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
-    `gatsby-plugin-graphql-loader`,
-    {
-      /**
-       * The plugin that allows us to connect Gatsby to the Swapcard API
-       */
-      resolve: `gatsby-source-graphql`,
-      options: {
-        typeName: 'Swapcard',
-        fieldName: 'swapcard',
-        url: process.env.SWAPCARD_GRAPHQL_ENDPOINT,
-        headers: {
-          Authorization: process.env.SWAPCARD_API_ACCESS_TOKEN,
-        },
-      },
-    },
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        url: `${process.env.WP_API_URL}/graphql`,
-        verbose: true,
-        schema: {
-          perPage: 100,
-          // requestConcurrency: 1,
-          // previewRequestConcurrency: 1,
-          timeout: 120000,
-        },
-        searchAndReplace: [
-          {
-            search: '/app/uploads',
-            replace: '/wp-content/uploads',
-          },
-          // {
-          //   search: process.env.WP_API_BASE_URL,
-          //   replace: process.env.URL,
-          // },
-        ],
-        html: {
-          useGatsbyImage: true,
-          imageQuality: 99,
-          fallbackImageMaxWidth: 1200,
-          createStaticFiles: true,
-        },
-      },
-    },
-    {
-      /**
-       * FIXME: Added temporary to Local Plugins while waiting for an official fix
-       * This plugin generates fileNodes in your graphQL schema
-       * and add File type to it. You can now use gatsby-plugin-sharp and gatsby-transformer-sharp
-       * in your GraphQL schema.
-       * See https://www.gatsbyjs.com/plugins/gatsby-image-graphql-schema
-       */
-      resolve: 'gatsby-image-graphql-schema',
-      options: {
-        imageNames: ['Swapcard_Speaker.photoUrl'],
-        schemaTypeName: 'Swapcard',
-      },
-    },
+    // 'gatsby-plugin-netlify',
+    // `gatsby-plugin-graphql-loader`,
+    // {
+    //   /**
+    //    * The plugin that allows us to connect Gatsby to the Swapcard API
+    //    */
+    //   resolve: `gatsby-source-graphql`,
+    //   options: {
+    //     typeName: 'Swapcard',
+    //     fieldName: 'swapcard',
+    //     url: process.env.SWAPCARD_GRAPHQL_ENDPOINT,
+    //     headers: {
+    //       Authorization: process.env.SWAPCARD_API_ACCESS_TOKEN,
+    //     },
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-source-wordpress`,
+    //   options: {
+    //     url: `${process.env.WP_API_URL}/graphql`,
+    //     verbose: true,
+    //     schema: {
+    //       perPage: 100,
+    //       // requestConcurrency: 1,
+    //       // previewRequestConcurrency: 1,
+    //       timeout: 120000,
+    //     },
+    //     searchAndReplace: [
+    //       {
+    //         search: '/app/uploads',
+    //         replace: '/wp-content/uploads',
+    //       },
+    //       // {
+    //       //   search: process.env.WP_API_BASE_URL,
+    //       //   replace: process.env.URL,
+    //       // },
+    //     ],
+    //     html: {
+    //       useGatsbyImage: true,
+    //       imageQuality: 99,
+    //       fallbackImageMaxWidth: 1200,
+    //       createStaticFiles: true,
+    //     },
+    //   },
+    // },
+    // {
+    //   /**
+    //    * FIXME: Added temporary to Local Plugins while waiting for an official fix
+    //    * This plugin generates fileNodes in your graphQL schema
+    //    * and add File type to it. You can now use gatsby-plugin-sharp and gatsby-transformer-sharp
+    //    * in your GraphQL schema.
+    //    * See https://www.gatsbyjs.com/plugins/gatsby-image-graphql-schema
+    //    */
+    //   resolve: 'gatsby-image-graphql-schema',
+    //   options: {
+    //     imageNames: ['Swapcard_Speaker.photoUrl'],
+    //     schemaTypeName: 'Swapcard',
+    //   },
+    // },
   ],
 };
