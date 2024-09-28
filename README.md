@@ -1,5 +1,5 @@
 <h1 align="center">
-  Web à Québec website
+  Interface Québec website
 </h1>
 
 ## 🚀 Quick start
@@ -9,7 +9,7 @@
     Fire up your terminal and clone the repository using SSH wherever you might want to on your computer
 
     ```shell
-    git clone git@github.com:webaquebec/webaquebec.git
+    git clone git@github.com:capitalenumerique/interfaceqc.git
     ```
 
 2.  **Install packages 📦**
@@ -17,7 +17,7 @@
     Navigate into the site’s directory and install packages
 
     ```shell
-    cd webaquebec/
+    cd interfaceqc/
     yarn install
     ```
 
@@ -52,69 +52,6 @@ We're following [conventional commits](https://www.conventionalcommits.org/en/v1
       yarn commit
     ```
 
-2.  **Select the type of change**
-
-    ```sh
-     ? Select the type of change you're committing:
-       seed          🌱  Adding or updating seed files.
-       flags         🚩  Adding, updating, or removing feature flags.
-       animation     💫  Adding or updating animations and transitions.
-     ❯ style         🎨  Improving structure / format of the code.
-       perf          ⚡️  Improving performance.
-       prune         🔥  Removing code or files.
-       fix           🐛  Fixing a bug.
-     (Move up and down to reveal more choices)
-    ```
-
-3.  **Select a scope (Not necessary at that stage. Press Enter to skip that one)**
-
-    ```sh
-    ? Select the type of change you're committing: ui      💄  Updating the UI and style files.
-    ? Specify a scope:
-    ```
-
-4.  **Write a short description**
-
-    Make your commit messages meaningful using a [semantic style](https://seesparkbox.com/foundry/semantic_commit_messages)
-
-    ```sh
-    ? Select the type of change you're committing: ui      💄  Updating the UI and style files.
-    ? Specify a scope:
-    ? Write a short description: Adjust button padding
-      (40/75 characters)
-    ```
-
-5.  **Provide a longer description (optional. Press Enter to skip that one)**
-
-    ```sh
-      ? Select the type of change you're committing: ui       💄  Updating the UI and style files.
-      ? Specify a scope:
-      ? Write a short description: :lipstick:   Adjust button padding
-      ? Provide a longer description:
-    ```
-
-6.  **Provide a longer description in case of a BREAKING CHANGE commit (Press Enter to skip that one if not applicable)**
-
-    ```sh
-      ? Select the type of change you're committing: ui       💄  Updating the UI and style files.
-      ? Specify a scope:
-      ? Write a short description: :lipstick:   Adjust button padding
-      ? A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself:
-    ```
-
-7.  **List any issue closed by indicating their respective id number (Press Enter to skip that one if not applicable)**
-
-    ```sh
-      ? Select the type of change you're committing: ui       💄  Updating the UI and style files.
-      ? Specify a scope:
-      ? Write a short description: :lipstick:   Adjust button padding
-      ? A BREAKING CHANGE commit requires a body. Please enter a longer description of the commit itself:
-
-      ? List any issue closed (#1, #2, ...):
-    ```
-
-8.  **You're done!**
-
 ## Push and Pull Request
 
 1.  Once you commit all your changes, now you're ready to push your branch to the remote repository.
@@ -123,7 +60,7 @@ We're following [conventional commits](https://www.conventionalcommits.org/en/v1
       git push origin my-feature-branch
     ```
 
-2.  Go to [the repository](https://github.com/webaquebec/webaquebec) and make a [Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+2.  Go to [the repository](https://github.com/capitalenumerique/interfaceqc) and make a [Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
 ## Documentation and more
 
