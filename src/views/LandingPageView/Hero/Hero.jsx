@@ -1,0 +1,96 @@
+// vendors
+import React from 'react';
+
+// utils
+import { useTranslation } from 'react-i18next';
+
+// styles
+import {
+  StyledHero,
+  PageHeader,
+  Logo,
+  HeroTitle,
+  HeroIntro,
+  InfoWrapper,
+  InfoItem,
+  InfoTitleWrapper,
+  InfoIcon,
+  InfoTitle,
+} from './Hero.styles';
+
+// components
+import Button from '../../../components/Landing/Button';
+import Center from '../../../components/LayoutSections/Center';
+import Switcher from '../../../components/LayoutSections/Switcher';
+
+// images
+import vectorCalendar from '../../../images/landing/vectorCalendar.svg';
+import vectorMapPin from '../../../images/landing/vectorMapPin.svg';
+
+const Hero = () => {
+  const { t } = useTranslation();
+
+  return (
+    <StyledHero>
+      <PageHeader>
+        <Logo>Interface</Logo>
+        <Button>Participer</Button>
+      </PageHeader>
+
+      <Center maxWidth='1200px' gutters='12px' withText>
+        <HeroTitle>
+          Participe à<br /> Interface Québec
+        </HeroTitle>
+
+        <HeroIntro>
+          Un événement fait par et pour la communauté numérique, à partir de la
+          Ville de Québec.
+        </HeroIntro>
+
+        <Switcher threshold='768px' space='1.5rem' limit={2}>
+          <InfoWrapper>
+            <InfoItem>
+              <InfoTitleWrapper>
+                <a
+                  href='https://www.google.com/maps/place/84+Rue+Dalhousie,+Québec,+QC+G1K+8M5/@46.8165604,-71.2004492,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb895e7bbc6a0fb:0x1ca117d2a8f16a27!8m2!3d46.8165604!4d-71.2004492'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <InfoIcon
+                    src={vectorMapPin}
+                    alt={t('home.hero.eventLocation')}
+                  />
+                  <InfoTitle>Terminal de croisière - Port de Québec</InfoTitle>
+                </a>
+              </InfoTitleWrapper>
+              <p>
+                Attends-toi à trois journées de conférences sur des sujets tels
+                que le marketing, le design, le développement, l’intelligence
+                artificielle, la technocréativité, les communications et des
+                sujets innovants.
+              </p>
+            </InfoItem>
+
+            <InfoItem>
+              <InfoTitleWrapper>
+                <InfoIcon
+                  src={vectorCalendar}
+                  alt={t('home.hero.eventLocation')}
+                />
+                <InfoTitle>27 au 29 mai 2025</InfoTitle>
+              </InfoTitleWrapper>
+              <p>
+                En plus des conférences, tu vivras des moments festifs qui te
+                permettront de faire des rencontres qui marqueront ton parcours
+                professionnel. Ça, on te le promet!
+              </p>
+            </InfoItem>
+          </InfoWrapper>
+        </Switcher>
+        <Button>Participer</Button>
+      </Center>
+    </StyledHero>
+  );
+};
+
+export default Hero;

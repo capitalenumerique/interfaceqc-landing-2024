@@ -3,6 +3,7 @@ export const fontFamilies = {
   radioGrotesk: "'Radio Grotesk', sans-serif",
   redaction10: "'Redaction 10', serif",
   pressStart2P: "'Press Start 2P', cursive",
+  inter: 'Inter, Aria, sans-serif',
 };
 
 export const fontWeights = {
@@ -11,6 +12,7 @@ export const fontWeights = {
   light: 300,
   regular: 400,
   medium: 500,
+  semibold: 600,
   bold: 700,
   ultrabold: 800,
   black: 900,

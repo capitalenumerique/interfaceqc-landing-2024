@@ -51,6 +51,14 @@ const gris80 = '#858585';
 const gris90 = '#5E5E5E';
 const gris100 = '#383838';
 
+// Landing colors
+const emperorGray = '#525252';
+const silverGray = '#C8C8C8';
+const concreteGray = '#F3F3F3';
+const soapStone = '#FFFBFA';
+const rawSienna = '#D0664D';
+const burntSienna = '#EC7357';
+
 // #000CA0
 const blueberry80hsl = {
   hue: 236,
@@ -141,6 +149,14 @@ const colors = {
   mauve80hsl,
   cherryHsl,
   blushHsl,
+
+  // Landing colors
+  emperorGray,
+  silverGray,
+  concreteGray,
+  soapStone,
+  rawSienna,
+  burntSienna,
 };
 
 const alias = {

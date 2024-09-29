@@ -41,6 +41,46 @@ export const onRenderBody = ({ setHeadComponents }) => {
   const preloadFonts = [
     <link
       rel='preload'
+      href='/fonts/Inter/Inter_18pt-Regular.woff2'
+      as='font'
+      type='font/woff2'
+      crossOrigin='anonymous'
+      key='interRegularFont'
+    />,
+    <link
+      rel='preload'
+      href='/fonts/Inter/Inter_18pt-Medium.woff2'
+      as='font'
+      type='font/woff2'
+      crossOrigin='anonymous'
+      key='interMediumFont'
+    />,
+    <link
+      rel='preload'
+      href='/fonts/Inter/Inter_18pt-SemiBold.woff2'
+      as='font'
+      type='font/woff2'
+      crossOrigin='anonymous'
+      key='interSemiBoldFont'
+    />,
+    <link
+      rel='preload'
+      href='/fonts/Inter/Inter_18pt-Bold.woff2'
+      as='font'
+      type='font/woff2'
+      crossOrigin='anonymous'
+      key='interBoldFont'
+    />,
+    <link
+      rel='preload'
+      href='/fonts/Inter/Inter_18pt-Black.woff2'
+      as='font'
+      type='font/woff2'
+      crossOrigin='anonymous'
+      key='interBlackFont'
+    />,
+    <link
+      rel='preload'
       href='/fonts/PPRadioGrotesk/PPRadioGrotesk-Thin.woff2'
       as='font'
       type='font/woff2'
