@@ -7645,6 +7645,13 @@ gatsby-plugin-catch-links@^5.13.1:
     "@babel/runtime" "^7.20.13"
     escape-string-regexp "^1.0.5"
 
+gatsby-plugin-exclude@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-exclude/-/gatsby-plugin-exclude-1.0.2.tgz#eaf889fcb177553e3fa548d5bac02e1926dad113"
+  integrity sha512-qqnrAImVDuX1OygjDc8rFW/vUHifd/jTTKo05zKsCdtgwbfF3qGv6FiB7H5j5CyneboboDkt/mvN98G6ra7cDA==
+  dependencies:
+    multimatch "^4.0.0"
+
 gatsby-plugin-facebook-pixel@^1.0.7:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-facebook-pixel/-/gatsby-plugin-facebook-pixel-1.0.8.tgz#8f5aa6816ddf1cf451c372464fa3f873d7dae288"
@@ -10802,6 +10809,17 @@ multer@^1.4.5-lts.1:
     object-assign "^4.1.1"
     type-is "^1.6.4"
     xtend "^4.0.0"
+
+multimatch@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/multimatch/-/multimatch-4.0.0.tgz#8c3c0f6e3e8449ada0af3dd29efb491a375191b3"
+  integrity sha512-lDmx79y1z6i7RNx0ZGCPq1bzJ6ZoDDKbvh7jxr9SJcWLkShMzXrHbYVpTdnhNM5MXpDUxCQ4DgqVttVXlBgiBQ==
+  dependencies:
+    "@types/minimatch" "^3.0.3"
+    array-differ "^3.0.0"
+    array-union "^2.1.0"
+    arrify "^2.0.1"
+    minimatch "^3.0.4"
 
 multimatch@^5.0.0:
   version "5.0.0"
