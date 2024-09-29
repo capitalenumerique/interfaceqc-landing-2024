@@ -1,21 +1,17 @@
 // vendors
 import React from 'react';
 
-// utils
-import { useTranslation } from 'react-i18next';
-
 // styles
 import {
-  StyledHero,
-  PageHeader,
-  Logo,
-  HeroTitle,
-  HeroIntro,
-  InfoWrapper,
-  InfoItem,
-  InfoTitleWrapper,
-  InfoIcon,
-  InfoTitle,
+  TicketsSection,
+  TicketsTitle,
+  TicketsIntro,
+  PriceItem,
+  PriceTitle,
+  Price,
+  PriceInclusions,
+  PriceDetails,
+  PricesText,
 } from './Tickets.styles';
 
 // components
@@ -23,74 +19,78 @@ import Button from '../../../components/Landing/Button';
 import Center from '../../../components/LayoutSections/Center';
 import Switcher from '../../../components/LayoutSections/Switcher';
 
-// images
-import vectorCalendar from '../../../images/landing/vectorCalendar.svg';
-import vectorMapPin from '../../../images/landing/vectorMapPin.svg';
+const Tickets = () => (
+  <TicketsSection>
+    <Center maxWidth='1000px' gutters='12px' withText>
+      <TicketsTitle>Réserve ta place</TicketsTitle>
 
-const Tickets = () => {
-  const { t } = useTranslation();
+      <TicketsIntro>
+        Comme on est une nouvelle organisation qui déploie un événement pour une
+        première édition, on te suggère fortement de réserver ton accès tôt. Tel
+        un pirate, la trésorerie sera le nerf de la guerre pour 2025!
+      </TicketsIntro>
+    </Center>
 
-  return (
-    <StyledHero>
-      <PageHeader>
-        <Logo>Interface</Logo>
-        <Button>Participer</Button>
-      </PageHeader>
+    <Center
+      maxWidth='var(--max-landing-container-width)'
+      gutters='12px'
+      withText
+    >
+      <Switcher threshold='1024px' space='1.5rem' limit={3}>
+        <div>
+          <PriceItem>
+            <PriceTitle>Accès complet</PriceTitle>
+            <Price>655$</Price>
+            <Button>Réserver</Button>
+            <PriceInclusions>
+              <li>3 journées de conférences</li>
+              <li>5@7 festifs incluant les consommations</li>
+              <li>Repas et collations</li>
+              <li>Café et thé à volonté</li>
+            </PriceInclusions>
+            <PriceDetails>
+              Billet nominatif (ne peut pas être partagé entre collègues)
+            </PriceDetails>
+          </PriceItem>
 
-      <Center maxWidth='1200px' gutters='12px' withText>
-        <HeroTitle>
-          Participe à<br /> Interface Québec
-        </HeroTitle>
+          <PriceItem>
+            <PriceTitle>Accès entreprise</PriceTitle>
+            <Price>855$</Price>
+            <Button>Réserver</Button>
+            <PriceInclusions>
+              <li>3 journées de conférences</li>
+              <li>5@7 festifs incluant les consommations</li>
+              <li>Repas et collations</li>
+              <li>Café et thé à volonté</li>
+            </PriceInclusions>
+            <PriceDetails>
+              Billet non-nominatif (peut être partagé entre collègues)
+            </PriceDetails>
+          </PriceItem>
 
-        <HeroIntro>
-          Un événement fait par et pour la communauté numérique, à partir de la
-          Ville de Québec.
-        </HeroIntro>
+          <PriceItem>
+            <PriceTitle>Accès étudiant</PriceTitle>
+            <Price>355$</Price>
+            <Button>Réserver</Button>
+            <PriceInclusions>
+              <li>3 journées de conférences</li>
+              <li>5@7 festifs incluant les consommations</li>
+              <li>Repas et collations</li>
+              <li>Café et thé à volonté</li>
+            </PriceInclusions>
+          </PriceItem>
+        </div>
+      </Switcher>
 
-        <Switcher threshold='768px' space='1.5rem' limit={2}>
-          <InfoWrapper>
-            <InfoItem>
-              <InfoTitleWrapper>
-                <a
-                  href='https://www.google.com/maps/place/84+Rue+Dalhousie,+Québec,+QC+G1K+8M5/@46.8165604,-71.2004492,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb895e7bbc6a0fb:0x1ca117d2a8f16a27!8m2!3d46.8165604!4d-71.2004492'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
-                  <InfoIcon
-                    src={vectorMapPin}
-                    alt={t('home.hero.eventLocation')}
-                  />
-                  <InfoTitle>Terminal de croisière - Port de Québec</InfoTitle>
-                </a>
-              </InfoTitleWrapper>
-              <p>
-                Attends-toi à trois journées de conférences sur des sujets tels
-                que le marketing, le design, le développement, l’intelligence
-                artificielle, la technocréativité, les communications et des
-                sujets innovants.
-              </p>
-            </InfoItem>
-
-            <InfoItem>
-              <InfoTitleWrapper>
-                <InfoIcon
-                  src={vectorCalendar}
-                  alt={t('home.hero.eventLocation')}
-                />
-                <InfoTitle>27 au 29 mai 2025</InfoTitle>
-              </InfoTitleWrapper>
-              <p>
-                En plus des conférences, tu vivras des moments festifs qui te
-                permettront de faire des rencontres qui marqueront ton parcours
-                professionnel. Ça, on te le promet!
-              </p>
-            </InfoItem>
-          </InfoWrapper>
-        </Switcher>
-        <Button>Participer</Button>
+      <Center maxWidth='800px' gutters='12px' withText>
+        <PricesText>
+          Tous les tarifs indiqués sont avant taxes. Les billets sont
+          non-remboursables, mais peuvent être transférés à une autre personne
+          avant le début de l’événement.
+        </PricesText>
       </Center>
-    </StyledHero>
-  );
-};
+    </Center>
+  </TicketsSection>
+);
 
 export default Tickets;
