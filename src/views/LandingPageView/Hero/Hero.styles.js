@@ -1,5 +1,5 @@
 // vendors
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 // utils
 import breakpointsRange from '../../../utils/breakpointsRange';
@@ -65,11 +65,6 @@ export const HeroIntro = styled.p`
 
 export const InfoWrapper = styled.div`
   gap: 40px 0;
-
-  ${breakpointsRange(
-    [{ prop: 'marginBottom', sizes: [50, 80], bases: [16, 20] }],
-    breakpoints.spacings
-  )};
 `;
 
 export const InfoItem = styled.div`
@@ -101,6 +96,13 @@ export const InfoTitle = styled.h3`
       { prop: 'lineHeight', sizes: [32, 36], bases: [16, 20] },
       { prop: 'marginBottom', sizes: [16, 16], bases: [16, 20] },
     ],
+    breakpoints.spacings
+  )};
+`;
+
+export const buttonStyle = css`
+  ${breakpointsRange(
+    [{ prop: 'marginTop', sizes: [50, 80], bases: [16, 20] }],
     breakpoints.spacings
   )};
 `;

@@ -44,7 +44,7 @@ export const TicketsIntro = styled.p`
 
   ${breakpointsRange(
     [
-      { prop: 'fontSize', sizes: [18, 24], bases: [16, 20] },
+      { prop: 'fontSize', sizes: [16, 24], bases: [16, 20] },
       { prop: 'lineHeight', sizes: [24, 36], bases: [16, 20] },
       { prop: 'marginBottom', sizes: [60, 80], bases: [16, 20] },
     ],

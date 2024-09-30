@@ -16,6 +16,7 @@ import {
   InfoTitleWrapper,
   InfoIcon,
   InfoTitle,
+  buttonStyle,
 } from './Hero.styles';
 
 // components
@@ -34,10 +35,17 @@ const Hero = () => {
     <StyledHero>
       <PageHeader>
         <Logo>Interface</Logo>
-        <Button>Participer</Button>
+        <Button
+          tag='link'
+          href='https://ti.to/cnum/interface-2025'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          Participer
+        </Button>
       </PageHeader>
 
-      <Center maxWidth='1200px' gutters='12px' withText>
+      <Center maxWidth='1200px' gutters='16px' withText>
         <HeroTitle>
           Participe à<br /> Interface Québec
         </HeroTitle>
@@ -87,7 +95,15 @@ const Hero = () => {
             </InfoItem>
           </InfoWrapper>
         </Switcher>
-        <Button>Participer</Button>
+        <Button
+          tag='link'
+          href='https://ti.to/cnum/interface-2025'
+          target='_blank'
+          rel='noopener noreferrer'
+          css={buttonStyle}
+        >
+          Participer
+        </Button>
       </Center>
     </StyledHero>
   );

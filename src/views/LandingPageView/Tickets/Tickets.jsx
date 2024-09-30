@@ -21,7 +21,7 @@ import Switcher from '../../../components/LayoutSections/Switcher';
 
 const Tickets = () => (
   <TicketsSection>
-    <Center maxWidth='1000px' gutters='12px' withText>
+    <Center maxWidth='1000px' gutters='16px' withText>
       <TicketsTitle>Réserve ta place</TicketsTitle>
 
       <TicketsIntro>
@@ -41,7 +41,14 @@ const Tickets = () => (
           <PriceItem>
             <PriceTitle>Accès complet</PriceTitle>
             <Price>655$</Price>
-            <Button>Réserver</Button>
+            <Button
+              tag='link'
+              href='https://ti.to/cnum/interface-2025'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Réserver
+            </Button>
             <PriceInclusions>
               <li>3 journées de conférences</li>
               <li>5@7 festifs incluant les consommations</li>
@@ -56,7 +63,14 @@ const Tickets = () => (
           <PriceItem>
             <PriceTitle>Accès entreprise</PriceTitle>
             <Price>855$</Price>
-            <Button>Réserver</Button>
+            <Button
+              tag='link'
+              href='https://ti.to/cnum/interface-2025'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Réserver
+            </Button>
             <PriceInclusions>
               <li>3 journées de conférences</li>
               <li>5@7 festifs incluant les consommations</li>
@@ -71,7 +85,14 @@ const Tickets = () => (
           <PriceItem>
             <PriceTitle>Accès étudiant</PriceTitle>
             <Price>355$</Price>
-            <Button>Réserver</Button>
+            <Button
+              tag='link'
+              href='https://ti.to/cnum/interface-2025'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Réserver
+            </Button>
             <PriceInclusions>
               <li>3 journées de conférences</li>
               <li>5@7 festifs incluant les consommations</li>

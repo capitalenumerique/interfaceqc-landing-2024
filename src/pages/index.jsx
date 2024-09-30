@@ -10,6 +10,10 @@ import SEO from '../components/SEO';
 // views
 import Hero from '../views/LandingPageView/Hero';
 import Tickets from '../views/LandingPageView/Tickets';
+import EventPerks from '../views/LandingPageView/EventPerks';
+import Volunteers from '../views/LandingPageView/Volunteers';
+import Partners from '../views/LandingPageView/Partners';
+import Footer from '../views/LandingPageView/Footer';
 
 // styles
 import colors from '../styles/colors';
@@ -36,6 +40,14 @@ const IndexPage = () => {
       <Hero />
 
       <Tickets />
+
+      <EventPerks />
+
+      <Volunteers />
+
+      <Partners />
+
+      <Footer />
     </div>
   );
 };
