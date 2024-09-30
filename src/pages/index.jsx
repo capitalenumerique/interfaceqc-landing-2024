@@ -3,7 +3,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // components
-import { useTranslation } from 'react-i18next';
 import { css } from 'styled-components';
 import SEO from '../components/SEO';
 
@@ -27,30 +26,26 @@ const landingWrapperGlobalStyles = css`
   }
 `;
 
-const IndexPage = () => {
-  const { t } = useTranslation();
+const IndexPage = () => (
+  <div css={landingWrapperGlobalStyles}>
+    <SEO
+      title='Interface Québec | 27 au 29 mai 2025'
+      description='Interface c’est une communauté de passionnés qui déploie un événement numérique local de calibre international. Trois jours de conférences et de rencontres exceptionnelles.'
+    />
 
-  return (
-    <div css={landingWrapperGlobalStyles}>
-      <SEO
-        title={`Interface Québec | ${t('home.title')}`}
-        description={t('home.description')}
-      />
+    <Hero />
 
-      <Hero />
+    <Tickets />
 
-      <Tickets />
+    <EventPerks />
 
-      <EventPerks />
+    <Volunteers />
 
-      <Volunteers />
+    <Partners />
 
-      <Partners />
-
-      <Footer />
-    </div>
-  );
-};
+    <Footer />
+  </div>
+);
 
 export default IndexPage;
 
