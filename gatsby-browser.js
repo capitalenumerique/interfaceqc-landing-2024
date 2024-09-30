@@ -14,9 +14,11 @@ import { ModalProvider } from './src/contexts/ModalContext';
 // import { ProgramFiltersProvider } from './src/contexts/ProgramFiltersContext';
 
 // components
-import Layout from './src/components/Layout/Layout';
+// import Layout from './src/components/Layout/Layout';
+import LandingLayout from './src/components/Landing/Layout';
 
 // fonts
+import './static/fonts/Inter/inter.css';
 import './static/fonts/PPRadioGrotesk/radio-grotesk.css';
 import './static/fonts/Redaction/redaction.css';
 import '@fontsource/press-start-2p';
@@ -27,7 +29,7 @@ import LanguageProvider from './src/contexts/LanguageContext/LanguageContext';
 export const wrapPageElement = ({ element, props }) => (
   // props provide same data to Layout as Page element will get
   // including location, data, etc - you don't need to pass it
-  <Layout {...props}>{element}</Layout>
+  <LandingLayout {...props}>{element}</LandingLayout>
 );
 
 // Enable Modal and Program filters on every page/template

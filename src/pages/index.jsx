@@ -1,54 +1,51 @@
 // vendors
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 // components
-import { useTranslation } from 'react-i18next';
+import { css } from 'styled-components';
 import SEO from '../components/SEO';
-import PartnersGrids from '../components/PartnersGrids';
 
 // views
-import Hero from '../views/HomePageView/Hero';
-import StatsSection from '../views/HomePageView/StatsSection';
-import ExclusiveActivity from '../views/HomePageView/ExclusiveActivity';
-import KeynoteSection from '../views/HomePageView/KeynoteSection';
-import CTASection from '../views/HomePageView/CTASection/CTASection';
+import Hero from '../views/LandingPageView/Hero';
+import Tickets from '../views/LandingPageView/Tickets';
+import EventPerks from '../views/LandingPageView/EventPerks';
+import Volunteers from '../views/LandingPageView/Volunteers';
+import Partners from '../views/LandingPageView/Partners';
+import Footer from '../views/LandingPageView/Footer';
 
-const IndexPage = () => {
-  const [isAprilFirst, setIsAprilFirst] = useState(false);
+// styles
+import colors from '../styles/colors';
+import { fontFamilies } from '../styles/typography';
 
-  const { t } = useTranslation();
+const landingWrapperGlobalStyles = css`
+  color: ${colors.emperorGray};
 
-  useEffect(() => {
-    const currentDate = new Date();
-    const targetDate = new Date(currentDate.getFullYear(), 3, 1);
-    setIsAprilFirst(
-      currentDate.getMonth() === targetDate.getMonth() &&
-        currentDate.getDate() === targetDate.getDate()
-    );
-  }, []);
+  * {
+    font-family: ${fontFamilies.inter};
+  }
+`;
 
-  return (
-    <>
-      <SEO
-        title={`Interface Québec | ${t('home.title')}`}
-        description={t('home.description')}
-      />
+const IndexPage = () => (
+  <div css={landingWrapperGlobalStyles}>
+    <SEO
+      title='Interface Québec | 27 au 29 mai 2025'
+      description='Interface c’est une communauté de passionnés qui déploie un événement numérique local de calibre international. Trois jours de conférences et de rencontres exceptionnelles.'
+    />
 
-      <Hero />
+    <Hero />
 
-      <StatsSection />
+    <Tickets />
 
-      {isAprilFirst && <ExclusiveActivity />}
+    <EventPerks />
 
-      <CTASection />
+    <Volunteers />
 
-      <KeynoteSection />
+    <Partners />
 
-      <PartnersGrids titled />
-    </>
-  );
-};
+    <Footer />
+  </div>
+);
 
 export default IndexPage;
 

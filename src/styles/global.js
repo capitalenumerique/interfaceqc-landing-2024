@@ -17,6 +17,7 @@ export const rootStyle = css`
   --container-gutter: 16px;
   --min-container-width: 320px;
   --max-container-width: 1280px;
+  --max-landing-container-width: 1440px;
   --max-content-post-width: 854px;
 
   font-size: ${interpolate(16, 20, 480, 1280)};

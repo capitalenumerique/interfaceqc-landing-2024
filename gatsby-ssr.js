@@ -14,14 +14,14 @@ import { ModalProvider } from './src/contexts/ModalContext';
 // import { ProgramFiltersProvider } from './src/contexts/ProgramFiltersContext';
 
 // components
-import Layout from './src/components/Layout/Layout';
+import LandingLayout from './src/components/Landing/Layout';
 import LanguageProvider from './src/contexts/LanguageContext/LanguageContext';
 
 // Apply Layout component to every page and template
 export const wrapPageElement = ({ element, props }) => (
   // props provide same data to Layout as Page element will get
   // including location, data, etc - you don't need to pass it
-  <Layout {...props}>{element}</Layout>
+  <LandingLayout {...props}>{element}</LandingLayout>
 );
 
 export const wrapRootElement = ({ element }) => (
@@ -39,6 +39,46 @@ export const onRenderBody = ({ setHeadComponents }) => {
   // Preload fonts to improve performances
   // See more https://www.gatsbyjs.com/docs/how-to/styling/using-local-fonts/#preload-your-fonts
   const preloadFonts = [
+    <link
+      rel='preload'
+      href='/fonts/Inter/Inter_18pt-Regular.woff2'
+      as='font'
+      type='font/woff2'
+      crossOrigin='anonymous'
+      key='interRegularFont'
+    />,
+    <link
+      rel='preload'
+      href='/fonts/Inter/Inter_18pt-Medium.woff2'
+      as='font'
+      type='font/woff2'
+      crossOrigin='anonymous'
+      key='interMediumFont'
+    />,
+    <link
+      rel='preload'
+      href='/fonts/Inter/Inter_18pt-SemiBold.woff2'
+      as='font'
+      type='font/woff2'
+      crossOrigin='anonymous'
+      key='interSemiBoldFont'
+    />,
+    <link
+      rel='preload'
+      href='/fonts/Inter/Inter_18pt-Bold.woff2'
+      as='font'
+      type='font/woff2'
+      crossOrigin='anonymous'
+      key='interBoldFont'
+    />,
+    <link
+      rel='preload'
+      href='/fonts/Inter/Inter_18pt-Black.woff2'
+      as='font'
+      type='font/woff2'
+      crossOrigin='anonymous'
+      key='interBlackFont'
+    />,
     <link
       rel='preload'
       href='/fonts/PPRadioGrotesk/PPRadioGrotesk-Thin.woff2'
