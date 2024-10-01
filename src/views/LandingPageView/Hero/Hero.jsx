@@ -45,8 +45,8 @@ const Hero = () => (
       </HeroTitle>
 
       <HeroIntro>
-        Un événement fait par et pour la communauté numérique, à partir de la
-        Ville de Québec.
+        Un événement fait par et pour la communauté numérique
+        <br /> à partir de la Ville de Québec.
       </HeroIntro>
 
       <Switcher threshold='768px' space='1.5rem' limit={2}>
