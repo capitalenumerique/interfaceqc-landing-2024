@@ -29,7 +29,7 @@ const Footer = () => (
     <Switcher threshold='1024px' space='0' limit={2}>
       <BlocksWrapper>
         <ContactWrapper>
-          <Logo>Interface Québec</Logo>
+          <Logo>Interface</Logo>
           <a
             href='mailto:info@interfaceqc.com'
             target='_blank'
@@ -84,7 +84,7 @@ const Footer = () => (
             >
               Politique de confidentialité
             </a>{' '}
-            | © Interface Québec 2024. Tous droits réservés.
+            | © Interface - Québec 2024. Tous droits réservés.
           </Credits>
         </ContactWrapper>
 

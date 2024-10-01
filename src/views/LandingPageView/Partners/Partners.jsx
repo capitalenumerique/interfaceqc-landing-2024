@@ -19,8 +19,8 @@ const Partners = () => (
       <PartnersTitle>Partenaires</PartnersTitle>
       <PartnersIntro>
         L’appui des partenaires est essentiel pour rendre l’expérience des
-        participant(e)s exceptionnelle. Pour contribuer à Interface Québec à
-        titre de partenaire, écris-nous!
+        participant(e)s exceptionnelle. Pour contribuer à Interface à titre de
+        partenaire, écris-nous!
       </PartnersIntro>
       <Button tag='link' href='mailto:info@capitalenumerique.com'>
         Ça m’intéresse

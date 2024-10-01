@@ -31,7 +31,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO
-        title={`Interface Québec | ${t('home.title')}`}
+        title={`Interface | ${t('home.title')}`}
         description={t('home.description')}
       />
 

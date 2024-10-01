@@ -56,7 +56,7 @@ export const HeroIntro = styled.p`
   ${breakpointsRange(
     [
       { prop: 'fontSize', sizes: [24, 40], bases: [16, 20] },
-      { prop: 'lineHeight', sizes: [24, 40], bases: [16, 20] },
+      { prop: 'lineHeight', sizes: [32, 48], bases: [16, 20] },
       { prop: 'marginBottom', sizes: [60, 100], bases: [16, 20] },
     ],
     breakpoints.spacings

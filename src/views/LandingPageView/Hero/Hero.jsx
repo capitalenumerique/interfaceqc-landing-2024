@@ -41,12 +41,12 @@ const Hero = () => (
 
     <Center maxWidth='1200px' gutters='16px' withText>
       <HeroTitle>
-        Participe à<br /> Interface Québec
+        Participe à<br /> Interface
       </HeroTitle>
 
       <HeroIntro>
-        Un événement fait par et pour la communauté numérique, à partir de la
-        Ville de Québec.
+        Un événement fait par et pour la communauté numérique
+        <br /> à partir de la Ville de Québec.
       </HeroIntro>
 
       <Switcher threshold='768px' space='1.5rem' limit={2}>

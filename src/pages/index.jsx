@@ -29,7 +29,7 @@ const landingWrapperGlobalStyles = css`
 const IndexPage = () => (
   <div css={landingWrapperGlobalStyles}>
     <SEO
-      title='Interface Québec | 27 au 29 mai 2025'
+      title='Interface | 27 au 29 mai 2025'
       description='Interface c’est une communauté de passionnés qui déploie un événement numérique local de calibre international. Trois jours de conférences et de rencontres exceptionnelles.'
     />
 
