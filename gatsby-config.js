@@ -6,7 +6,7 @@ const inProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
   siteMetadata: {
-    title: 'Interface Québec',
+    title: 'Interface',
     description: '',
     siteUrl: 'https://interfaceqc.org',
     image: '',

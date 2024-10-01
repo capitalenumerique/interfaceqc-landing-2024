@@ -25,9 +25,8 @@ const Tickets = () => (
       <TicketsTitle>Réserve ta place</TicketsTitle>
 
       <TicketsIntro>
-        Comme on est une nouvelle organisation qui déploie un événement pour une
-        première édition, on te suggère fortement de réserver ton accès tôt. Tel
-        un pirate, la trésorerie sera le nerf de la guerre pour 2025!
+        Fais partie de la première édition d&apos;Interface - Québec et réserve
+        ton accès dès maintenant!
       </TicketsIntro>
     </Center>
 
@@ -108,6 +107,7 @@ const Tickets = () => (
           Tous les tarifs indiqués sont avant taxes. Les billets sont
           non-remboursables, mais peuvent être transférés à une autre personne
           avant le début de l’événement.
+          <br /> Les tarifs sont en vigueur jusqu&apos;au 20 mars inclusivement.
         </PricesText>
       </Center>
     </Center>

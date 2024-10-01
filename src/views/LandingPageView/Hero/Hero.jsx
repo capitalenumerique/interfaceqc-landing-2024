@@ -41,7 +41,7 @@ const Hero = () => (
 
     <Center maxWidth='1200px' gutters='16px' withText>
       <HeroTitle>
-        Participe à<br /> Interface Québec
+        Participe à<br /> Interface
       </HeroTitle>
 
       <HeroIntro>

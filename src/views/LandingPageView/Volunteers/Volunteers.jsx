@@ -51,7 +51,6 @@ const Volunteers = () => (
         <li>Jean-François Verville</li>
         <li>Jonathan Parent</li>
         <li>Jean-Philippe Bonneau</li>
-        <li>Carole-Ann Labrie</li>
         <li>Josianne Picard</li>
         <li>Kathleen Higgins</li>
         <li>Marie-Pier Roy-Dubé</li>
@@ -61,7 +60,7 @@ const Volunteers = () => (
         <li>Roxane Garceau-Bolduc</li>
       </VolunteersList>
       <Hammer src={vectorHammer} alt='' />
-      <VolunteerCTAText>Tu veux t’impliquer toi aussi?</VolunteerCTAText>
+      <VolunteerCTAText>Et toi?</VolunteerCTAText>
       <Button
         tag='link'
         href='https://forms.gle/2fehZZGtc4XZ5Ddc6'
