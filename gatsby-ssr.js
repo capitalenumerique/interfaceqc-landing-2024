@@ -235,19 +235,9 @@ export const onRenderBody = ({ setHeadComponents }) => {
 
   const scripts = [
     <script
-      dangerouslySetInnerHTML={{
-        __html: `
-          window.axeptioSettings = {
-          clientId: "66449091b18ff7b3e3ed5f8b",
-          cookiesVersion: "webaquebecorg-fr-EU",
-          };
-          (function(d, s) {
-            var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
-            e.async = true; e.src = "//static.axept.io/sdk.js";
-            t.parentNode.insertBefore(e, t);
-          })(document, "script");
-        `,
-      }}
+      id='cookieyes'
+      type='text/javascript'
+      src='https://cdn-cookieyes.com/client_data/ff8ff3a41e07d057d42815af/script.js'
     />,
   ];
 

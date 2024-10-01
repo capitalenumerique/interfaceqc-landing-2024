@@ -10,7 +10,7 @@ import breakpointsRange from '../../../utils/breakpointsRange';
 
 /* Default button styled */
 const StyledButton = styled.button`
-  --btn-color: ${colors.soapStone};
+  --btn-color: ${colors.gris100};
   --btn-bg-color: ${colors.burntSienna};
 
   display: inline-flex;

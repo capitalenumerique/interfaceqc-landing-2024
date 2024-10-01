@@ -20,7 +20,7 @@ export const VolunteersSection = styled.section`
     breakpoints.spacings
   )};
 
-  * {
+  :not(a) {
     color: ${colors.soapStone};
   }
 `;
