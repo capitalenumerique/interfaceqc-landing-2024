@@ -49,7 +49,7 @@ const gris40 = '#D1D1D1';
 const gris60 = '#ABABAB';
 const gris80 = '#858585';
 const gris90 = '#5E5E5E';
-const gris100 = '#383838';
+const gris100 = '#282828';
 
 // Landing colors
 const emperorGray = '#525252';

@@ -17,6 +17,8 @@ export const BlocksWrapper = styled.div`
 `;
 
 export const ContactWrapper = styled.div`
+  color: ${colors.gris100};
+
   background-color: ${colors.burntSienna};
 
   ${breakpointsRange(
@@ -28,10 +30,6 @@ export const ContactWrapper = styled.div`
     ],
     breakpoints.spacings
   )};
-
-  * {
-    color: ${colors.soapStone};
-  }
 `;
 
 export const Logo = styled.p`
