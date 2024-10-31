@@ -3,7 +3,6 @@ import styled, { css } from 'styled-components';
 
 // utils
 import breakpointsRange from '../../../utils/breakpointsRange';
-import { greaterThan } from '../../../utils/mediaQuery';
 
 // styles
 import breakpoints from '../../../styles/breakpoints';
@@ -28,7 +27,7 @@ export const PageHeader = styled.div`
 `;
 
 export const Logo = styled.span`
-  font-weight: ${fontWeights.bold};
+  font-weight: ${fontWeights.medium};
 
   ${breakpointsRange(
     [{ prop: 'fontSize', sizes: [24, 32], bases: [16, 20] }],
@@ -37,12 +36,12 @@ export const Logo = styled.span`
 `;
 
 export const HeroTitle = styled.h2`
-  font-weight: ${fontWeights.black};
+  font-weight: ${fontWeights.semibold};
 
   ${breakpointsRange(
     [
-      { prop: 'fontSize', sizes: [60, 130], bases: [16, 20] },
-      { prop: 'lineHeight', sizes: [60, 130], bases: [16, 20] },
+      { prop: 'fontSize', sizes: [40, 64], bases: [16, 20] },
+      { prop: 'lineHeight', sizes: [45, 80], bases: [16, 20] },
       { prop: 'marginTop', sizes: [60, 100], bases: [16, 20] },
       { prop: 'marginBottom', sizes: [16, 16], bases: [16, 20] },
     ],
@@ -51,13 +50,13 @@ export const HeroTitle = styled.h2`
 `;
 
 export const HeroIntro = styled.p`
-  font-weight: ${fontWeights.bold};
+  font-weight: ${fontWeights.medium};
 
   ${breakpointsRange(
     [
-      { prop: 'fontSize', sizes: [24, 40], bases: [16, 20] },
-      { prop: 'lineHeight', sizes: [32, 48], bases: [16, 20] },
-      { prop: 'marginBottom', sizes: [60, 100], bases: [16, 20] },
+      { prop: 'fontSize', sizes: [20, 32], bases: [16, 20] },
+      { prop: 'lineHeight', sizes: [24, 40], bases: [16, 20] },
+      { prop: 'marginBottom', sizes: [32, 50], bases: [16, 20] },
     ],
     breakpoints.spacings
   )};
@@ -73,28 +72,28 @@ export const InfoItem = styled.div`
   align-items: center;
 `;
 
-export const InfoTitleWrapper = styled.div`
-  ${greaterThan(768)} {
-    min-height: 155px;
-  }
-`;
+export const InfoTitle = styled.p`
+  margin-bottom: 0;
 
-export const InfoIcon = styled.img`
+  font-weight: ${fontWeights.medium};
+
   ${breakpointsRange(
     [
-      { prop: 'width', sizes: [32, 40], bases: [16, 20] },
-      { prop: 'marginBottom', sizes: [16, 20], bases: [16, 20] },
+      { prop: 'fontSize', sizes: [18, 24], bases: [16, 20] },
+      { prop: 'lineHeight', sizes: [24, 32], bases: [16, 20] },
     ],
     breakpoints.spacings
   )};
 `;
 
-export const InfoTitle = styled.h3`
+export const InfoText = styled.p`
+  font-weight: ${fontWeights.medium};
+
   ${breakpointsRange(
     [
-      { prop: 'fontSize', sizes: [24, 32], bases: [16, 20] },
-      { prop: 'lineHeight', sizes: [32, 36], bases: [16, 20] },
-      { prop: 'marginBottom', sizes: [16, 16], bases: [16, 20] },
+      { prop: 'fontSize', sizes: [18, 24], bases: [16, 20] },
+      { prop: 'lineHeight', sizes: [24, 32], bases: [16, 20] },
+      { prop: 'marginTop', sizes: [16, 24], bases: [16, 20] },
     ],
     breakpoints.spacings
   )};

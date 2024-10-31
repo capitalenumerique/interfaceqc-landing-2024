@@ -8,7 +8,7 @@ import breakpointsRange from '../../../utils/breakpointsRange';
 import breakpoints from '../../../styles/breakpoints';
 import { fontWeights } from '../../../styles/typography';
 
-export const VolunteersSection = styled.section`
+export const SpeakersSection = styled.section`
   ${breakpointsRange(
     [
       { prop: 'paddingTop', sizes: [75, 100], bases: [16, 20] },
@@ -18,7 +18,7 @@ export const VolunteersSection = styled.section`
   )};
 `;
 
-export const VolunteersTitle = styled.h2`
+export const SpeakersTitle = styled.h2`
   font-weight: ${fontWeights.medium};
 
   ${breakpointsRange(
@@ -31,7 +31,7 @@ export const VolunteersTitle = styled.h2`
   )};
 `;
 
-export const VolunteersIntro = styled.p`
+export const SpeakersIntro = styled.p`
   font-weight: ${fontWeights.medium};
 
   ${breakpointsRange(
@@ -44,17 +44,14 @@ export const VolunteersIntro = styled.p`
   )};
 `;
 
-export const VolunteersList = styled.ul`
+export const SpeakersText = styled.p`
   font-weight: ${fontWeights.medium};
-  text-align: center;
-
-  list-style: none;
 
   ${breakpointsRange(
     [
-      { prop: 'fontSize', sizes: [18, 24], bases: [16, 20] },
-      { prop: 'lineHeight', sizes: [24, 36], bases: [16, 20] },
-      { prop: 'marginBottom', sizes: [32, 48], bases: [16, 20] },
+      { prop: 'fontSize', sizes: [16, 24], bases: [16, 20] },
+      { prop: 'lineHeight', sizes: [20, 32], bases: [16, 20] },
+      { prop: 'marginTop', sizes: [32, 48], bases: [16, 20] },
     ],
     breakpoints.spacings
   )};

@@ -9,18 +9,16 @@ import SEO from '../components/SEO';
 // views
 import Hero from '../views/LandingPageView/Hero';
 import Tickets from '../views/LandingPageView/Tickets';
+import Speakers from '../views/LandingPageView/Speakers/Speakers';
 import EventPerks from '../views/LandingPageView/EventPerks';
 import Volunteers from '../views/LandingPageView/Volunteers';
 import Partners from '../views/LandingPageView/Partners';
 import Footer from '../views/LandingPageView/Footer';
 
 // styles
-import colors from '../styles/colors';
 import { fontFamilies } from '../styles/typography';
 
 const landingWrapperGlobalStyles = css`
-  color: ${colors.emperorGray};
-
   * {
     font-family: ${fontFamilies.inter};
   }
@@ -36,6 +34,8 @@ const IndexPage = () => (
     <Hero />
 
     <Tickets />
+
+    <Speakers />
 
     <EventPerks />
 

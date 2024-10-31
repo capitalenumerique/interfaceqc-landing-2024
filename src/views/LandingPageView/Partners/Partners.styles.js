@@ -19,12 +19,12 @@ export const PartnersSection = styled.section`
 `;
 
 export const PartnersTitle = styled.h2`
-  font-weight: ${fontWeights.black};
+  font-weight: ${fontWeights.medium};
 
   ${breakpointsRange(
     [
-      { prop: 'fontSize', sizes: [40, 80], bases: [16, 20] },
-      { prop: 'lineHeight', sizes: [50, 90], bases: [16, 20] },
+      { prop: 'fontSize', sizes: [24, 48], bases: [16, 20] },
+      { prop: 'lineHeight', sizes: [32, 56], bases: [16, 20] },
       { prop: 'marginBottom', sizes: [16, 24], bases: [16, 20] },
     ],
     breakpoints.spacings
@@ -39,19 +39,6 @@ export const PartnersIntro = styled.p`
       { prop: 'fontSize', sizes: [16, 24], bases: [16, 20] },
       { prop: 'lineHeight', sizes: [24, 36], bases: [16, 20] },
       { prop: 'marginBottom', sizes: [40, 60], bases: [16, 20] },
-    ],
-    breakpoints.spacings
-  )};
-`;
-
-export const PartnersThanks = styled.p`
-  font-weight: ${fontWeights.bold};
-
-  ${breakpointsRange(
-    [
-      { prop: 'fontSize', sizes: [16, 24], bases: [16, 20] },
-      { prop: 'lineHeight', sizes: [24, 36], bases: [16, 20] },
-      { prop: 'marginTop', sizes: [40, 60], bases: [16, 20] },
     ],
     breakpoints.spacings
   )};
