@@ -10,6 +10,7 @@ import {
   HeroIntro,
   InfoWrapper,
   InfoItem,
+  InfoDates,
   InfoText,
   InfoTitle,
   buttonStyle,
@@ -43,7 +44,7 @@ const Hero = () => (
 
       <InfoWrapper>
         <InfoItem>
-          <InfoTitle>27 au 29 mai 2025</InfoTitle>
+          <InfoDates>27 au 29 mai 2025</InfoDates>
           <a
             href='https://www.google.com/maps/place/84+Rue+Dalhousie,+Québec,+QC+G1K+8M5/@46.8165604,-71.2004492,17z/data=!3m1!4b1!4m5!3m4!1s0x4cb895e7bbc6a0fb:0x1ca117d2a8f16a27!8m2!3d46.8165604!4d-71.2004492'
             target='_blank'

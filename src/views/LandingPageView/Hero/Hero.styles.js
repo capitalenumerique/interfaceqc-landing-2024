@@ -72,6 +72,20 @@ export const InfoItem = styled.div`
   align-items: center;
 `;
 
+export const InfoDates = styled.p`
+  margin-bottom: 0;
+
+  font-weight: ${fontWeights.bold};
+
+  ${breakpointsRange(
+    [
+      { prop: 'fontSize', sizes: [24, 32], bases: [16, 20] },
+      { prop: 'lineHeight', sizes: [24, 32], bases: [16, 20] },
+    ],
+    breakpoints.spacings
+  )};
+`;
+
 export const InfoTitle = styled.p`
   margin-bottom: 0;
 

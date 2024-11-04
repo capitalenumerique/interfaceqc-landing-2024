@@ -24,6 +24,11 @@ const Speakers = () => (
         softskills?
       </SpeakersIntro>
 
+      <SpeakersText>
+        Dépêche-toi! Tu as jusqu’au 12 janvier 2025 pour déposer ta candidature
+        !
+      </SpeakersText>
+
       <Button
         tag='link'
         href='https://form.asana.com/?k=97YAy3lzKI7Xq9nWDIwcoQ&d=1207626177757620'
@@ -32,11 +37,6 @@ const Speakers = () => (
       >
         Déposer ma candidature
       </Button>
-
-      <SpeakersText>
-        Dépêche-toi! Tu as jusqu’au 12 janvier 2025 pour déposer ta candidature
-        !
-      </SpeakersText>
     </Center>
   </SpeakersSection>
 );

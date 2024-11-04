@@ -51,7 +51,7 @@ export const SpeakersText = styled.p`
     [
       { prop: 'fontSize', sizes: [16, 24], bases: [16, 20] },
       { prop: 'lineHeight', sizes: [20, 32], bases: [16, 20] },
-      { prop: 'marginTop', sizes: [32, 48], bases: [16, 20] },
+      { prop: 'marginBottom', sizes: [32, 48], bases: [16, 20] },
     ],
     breakpoints.spacings
   )};
