@@ -106,7 +106,7 @@ const Tickets = () => (
         <PricesText>
           Tous les tarifs indiqués sont avant taxes. Les billets sont
           non-remboursables, mais peuvent être transférés à une autre personne
-          avant le début de l’événement. Les tarifs sont en vigueur
+          avant le début de l’événement. Les tarifs sont en vigueur{' '}
           <strong>jusqu&apos;au 20 mars inclusivement</strong>.
         </PricesText>
       </Center>
