@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { css } from 'styled-components';
 
 import { GlobalStyle } from '../../../styles/global';
 
@@ -12,6 +13,14 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 // styles
 import colors from '../../../styles/colors';
 
+const mainStyles = css`
+  background-color: ${colors.springWood};
+
+  * {
+    color: ${colors.tuatara};
+  }
+`;
+
 /**
  * The common Layout shared across all pages
  *
@@ -22,13 +31,7 @@ const Layout = ({ children }) => (
   <>
     <GlobalStyle />
 
-    <main
-      css={`
-        --page-bg-color: ${colors.concreteGray};
-      `}
-    >
-      {children}
-    </main>
+    <main css={mainStyles}>{children}</main>
   </>
 );
 

@@ -7,16 +7,11 @@ import {
   VolunteersTitle,
   VolunteersIntro,
   VolunteersList,
-  Hammer,
-  VolunteerCTAText,
 } from './Volunteers.styles';
 
 // components
 import Button from '../../../components/Landing/Button';
 import Center from '../../../components/LayoutSections/Center';
-
-// images
-import vectorHammer from '../../../images/landing/vectorHammer.svg';
 
 const Volunteers = () => (
   <VolunteersSection>
@@ -26,8 +21,8 @@ const Volunteers = () => (
 
     <Center maxWidth='600px' gutters='16px' withText>
       <VolunteersIntro>
-        Quand on dit un événement par et pour la communauté, <i>c’est ça</i>{' '}
-        qu’on veut dire!
+        Quand on dit un événement par et pour la communauté, c’est ça qu’on veut
+        dire!
       </VolunteersIntro>
     </Center>
 
@@ -59,15 +54,14 @@ const Volunteers = () => (
         <li>Rosalie Simard</li>
         <li>Roxane Garceau-Bolduc</li>
       </VolunteersList>
-      <Hammer src={vectorHammer} alt='' />
-      <VolunteerCTAText>Et toi?</VolunteerCTAText>
+
       <Button
         tag='link'
         href='https://forms.gle/2fehZZGtc4XZ5Ddc6'
         target='_blank'
         rel='noopener noreferrer'
       >
-        Manifeste-toi
+        Devenir bénévole
       </Button>
     </Center>
   </VolunteersSection>

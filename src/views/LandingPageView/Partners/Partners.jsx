@@ -6,7 +6,6 @@ import {
   PartnersSection,
   PartnersTitle,
   PartnersIntro,
-  PartnersThanks,
 } from './Partners.styles';
 
 // components
@@ -15,7 +14,7 @@ import Center from '../../../components/LayoutSections/Center';
 
 const Partners = () => (
   <PartnersSection>
-    <Center maxWidth='1000px' gutters='16px' withText>
+    <Center maxWidth='700px' gutters='16px' withText>
       <PartnersTitle>Partenaires</PartnersTitle>
       <PartnersIntro>
         L’appui des partenaires est essentiel pour rendre l’expérience des
@@ -25,7 +24,6 @@ const Partners = () => (
       <Button tag='link' href='mailto:info@capitalenumerique.com'>
         Ça m’intéresse
       </Button>
-      <PartnersThanks>Merci à nos partenaires</PartnersThanks>
     </Center>
   </PartnersSection>
 );
