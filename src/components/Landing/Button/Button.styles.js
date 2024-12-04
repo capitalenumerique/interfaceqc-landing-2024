@@ -26,7 +26,7 @@ const StyledButton = styled.button`
   text-decoration: none;
 
   background-color: var(--btn-bg-color);
-  border: 2px solid var(--btn-color);
+  border: 2px solid currentColor;
 
   border-radius: 8px;
   outline: 0;
