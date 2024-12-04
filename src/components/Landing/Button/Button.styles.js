@@ -10,8 +10,8 @@ import breakpointsRange from '../../../utils/breakpointsRange';
 
 /* Default button styled */
 const StyledButton = styled.button`
-  --btn-color: ${colors.tuatara};
-  --btn-bg-color: ${colors.springWood};
+  --btn-color: ${colors.springWood};
+  --btn-bg-color: ${colors.tuatara};
 
   display: inline-flex;
   align-items: center;
@@ -26,7 +26,7 @@ const StyledButton = styled.button`
   text-decoration: none;
 
   background-color: var(--btn-bg-color);
-  border: 2px solid ${colors.tuatara};
+  border: 2px solid currentColor;
 
   border-radius: 8px;
   outline: 0;
@@ -52,8 +52,8 @@ const StyledButton = styled.button`
   &.active,
   &:focus,
   &:hover:not([disabled]) {
-    --btn-bg-color: ${colors.tuatara};
-    --btn-color: ${colors.springWood};
+    --btn-bg-color: ${colors.springWood};
+    --btn-color: ${colors.tuatara};
   }
 
   &[disabled] {
