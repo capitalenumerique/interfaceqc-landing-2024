@@ -19,6 +19,7 @@ import Center from '../../../components/LayoutSections/Center';
 import logoBaseline from '../../../images/logoPartners/landing/logo-baseline.svg';
 import logoVooban from '../../../images/logoPartners/landing/logo-vooban.svg';
 import logofriends from '../../../images/logoPartners/landing/logo-&friends.svg';
+import logoIa from '../../../images/logoPartners/landing/logo-ia.svg';
 import logoConsole from '../../../images/logoPartners/landing/logo-console.png';
 import logoInfobref from '../../../images/logoPartners/landing/logo-infobref.png';
 
@@ -38,6 +39,11 @@ const Partners = () => {
       src: logofriends,
       alt: 'And Friends',
       url: 'https://andfriends.ca/',
+    },
+    {
+      src: logoIa,
+      alt: 'iA Groupe financier',
+      url: 'https://ia.ca/',
     },
     {
       src: logoConsole,
