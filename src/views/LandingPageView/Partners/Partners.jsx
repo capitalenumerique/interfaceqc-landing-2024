@@ -53,7 +53,7 @@ const Partners = () => {
     {
       src: logoInfobref,
       alt: 'InfoBref PRO Techno',
-      url: 'https://infobref.com/pro/techno/',
+      url: 'https://infobref.com/cnum/',
     },
   ];
 
