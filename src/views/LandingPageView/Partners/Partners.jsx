@@ -5,7 +5,6 @@ import React from 'react';
 import {
   PartnersSection,
   PartnersTitle,
-  PartnersThanks,
   Grid,
   GridItem,
   PartnersIntro,
@@ -16,15 +15,34 @@ import Button from '../../../components/Landing/Button';
 import Center from '../../../components/LayoutSections/Center';
 
 // images
+import logoQuebecCite from '../../../images/logoPartners/landing/logo-quebeccite.png';
+import logoLibeo from '../../../images/logoPartners/landing/logo-libeo.svg';
+import logoPlg from '../../../images/logoPartners/landing/logo-plg.png';
 import logoBaseline from '../../../images/logoPartners/landing/logo-baseline.svg';
 import logoVooban from '../../../images/logoPartners/landing/logo-vooban.svg';
-import logofriends from '../../../images/logoPartners/landing/logo-&friends.svg';
+import logoDiapason from '../../../images/logoPartners/landing/logo-diapason.png';
 import logoIa from '../../../images/logoPartners/landing/logo-ia.svg';
+import logoFriends from '../../../images/logoPartners/landing/logo-&friends.svg';
 import logoConsole from '../../../images/logoPartners/landing/logo-console.png';
 import logoInfobref from '../../../images/logoPartners/landing/logo-infobref.png';
 
 const Partners = () => {
   const partners = [
+    {
+      src: logoQuebecCite,
+      alt: 'Destination Québec Cité',
+      url: 'https://www.quebec-cite.com/fr',
+    },
+    {
+      src: logoLibeo,
+      alt: 'Libéo',
+      url: 'https://libeo.com/',
+    },
+    {
+      src: logoPlg,
+      alt: 'PLG',
+      url: 'https://plgnumerique.com/',
+    },
     {
       src: logoBaseline,
       alt: 'Baseline',
@@ -36,14 +54,19 @@ const Partners = () => {
       url: 'https://vooban.com/',
     },
     {
-      src: logofriends,
-      alt: 'And Friends',
-      url: 'https://andfriends.ca/',
+      src: logoDiapason,
+      alt: 'Collectif Diapason',
+      url: 'https://collectifdiapason.com/',
     },
     {
       src: logoIa,
       alt: 'iA Groupe financier',
       url: 'https://ia.ca/',
+    },
+    {
+      src: logoFriends,
+      alt: 'And Friends',
+      url: 'https://andfriends.ca/',
     },
     {
       src: logoConsole,
@@ -59,12 +82,11 @@ const Partners = () => {
 
   return (
     <PartnersSection>
-      <Center maxWidth='700px' gutters='16px' withText>
-        <PartnersTitle>Partenaires</PartnersTitle>
-        <PartnersThanks>Merci à nos partenaires</PartnersThanks>
+      <Center maxWidth='1000px' gutters='16px' withText>
+        <PartnersTitle>Merci à nos partenaires</PartnersTitle>
         <Center
           as='section'
-          maxWidth='900px'
+          maxWidth='1000px'
           gutters='var(--container-gutter)'
           intrinsic
           withText

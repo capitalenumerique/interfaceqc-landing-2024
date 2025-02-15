@@ -114,7 +114,7 @@ const Footer = () => (
 
             <Button
               tag='link'
-              href='https://share.hsforms.com/1w3MoF6_0TZuy05OgeZIWYQruljq'
+              href='https://l.c.capitalenumerique.com/T/WF/29582/hiWyAo/Optin/fr-CA/Form.ofsys'
               target='_blank'
               rel='noopener noreferrer'
               css='flex-shrink: 0;'
