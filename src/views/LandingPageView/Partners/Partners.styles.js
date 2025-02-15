@@ -31,19 +31,6 @@ export const PartnersTitle = styled.h2`
   )};
 `;
 
-export const PartnersThanks = styled.p`
-  font-weight: ${fontWeights.medium};
-
-  ${breakpointsRange(
-    [
-      { prop: 'fontSize', sizes: [16, 24], bases: [16, 20] },
-      { prop: 'lineHeight', sizes: [24, 36], bases: [16, 20] },
-      { prop: 'marginBottom', sizes: [40, 60], bases: [16, 20] },
-    ],
-    breakpoints.spacings
-  )};
-`;
-
 export const Grid = styled.ul`
   display: flex;
   flex-wrap: wrap;

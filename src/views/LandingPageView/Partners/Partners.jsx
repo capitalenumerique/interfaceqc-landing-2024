@@ -5,7 +5,6 @@ import React from 'react';
 import {
   PartnersSection,
   PartnersTitle,
-  PartnersThanks,
   Grid,
   GridItem,
   PartnersIntro,
@@ -23,7 +22,7 @@ import logoBaseline from '../../../images/logoPartners/landing/logo-baseline.svg
 import logoVooban from '../../../images/logoPartners/landing/logo-vooban.svg';
 import logoDiapason from '../../../images/logoPartners/landing/logo-diapason.png';
 import logoIa from '../../../images/logoPartners/landing/logo-ia.svg';
-import logofriends from '../../../images/logoPartners/landing/logo-&friends.svg';
+import logoFriends from '../../../images/logoPartners/landing/logo-&friends.svg';
 import logoConsole from '../../../images/logoPartners/landing/logo-console.png';
 import logoInfobref from '../../../images/logoPartners/landing/logo-infobref.png';
 
@@ -65,7 +64,7 @@ const Partners = () => {
       url: 'https://ia.ca/',
     },
     {
-      src: logofriends,
+      src: logoFriends,
       alt: 'And Friends',
       url: 'https://andfriends.ca/',
     },
@@ -84,8 +83,7 @@ const Partners = () => {
   return (
     <PartnersSection>
       <Center maxWidth='1000px' gutters='16px' withText>
-        <PartnersTitle>Partenaires</PartnersTitle>
-        <PartnersThanks>Merci à nos partenaires</PartnersThanks>
+        <PartnersTitle>Merci à nos partenaires</PartnersTitle>
         <Center
           as='section'
           maxWidth='1000px'
